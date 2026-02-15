@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+streamlit
+chromadb
+sentence-transformers
+openai
+pandas
+numpy
+pydantic
+python-dotenv
+requests
+pytest
