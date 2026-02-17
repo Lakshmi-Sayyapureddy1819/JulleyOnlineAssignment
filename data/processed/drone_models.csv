@@ -1,0 +1,6 @@
+model,manufacturer,class,weight_kg,endurance_min,price_inr
+ideaForge NINJA,ideaForge,Micro,2.0,25,450000
+Garuda Kisan Drone,Garuda Aerospace,Small,10.0,45,600000
+Agribot,IoTechWorld,Small,24.5,30,850000
+Asteria A200,Asteria Aerospace,Micro,1.5,40,550000
+Marut AG-365,Marut Drones,Small,12.0,35,700000

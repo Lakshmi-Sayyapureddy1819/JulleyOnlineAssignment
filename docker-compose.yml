@@ -13,10 +13,12 @@ services:
 
   frontend:
     build: .
-    command: streamlit run frontend/src/main.py
+    command: streamlit run frontend/src/App.py
     ports:
       - "8501:8501"
     volumes:
       - .:/app
+    environment:
+      - API_URL=http://api:8000
     depends_on:
       - api

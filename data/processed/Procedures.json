@@ -1,0 +1,68 @@
+{
+  "drone_regulation_database": {
+    "jurisdiction": "India",
+    "primary_authority": "Directorate General of Civil Aviation (DGCA)",
+    "legal_framework": "Drone Rules, 2021",
+    "digital_portal": "https://digitalsky.dgca.gov.in",
+    "classifications": [
+      {
+        "category": "Nano",
+        "weight_range": "<= 250g",
+        "registration_required": false,
+        "pilot_license_required": false,
+        "max_altitude_ft": 50
+      },
+      {
+        "category": "Micro",
+        "weight_range": "250g - 2kg",
+        "registration_required": true,
+        "pilot_license_required": true,
+        "max_altitude_ft": 400
+      },
+      {
+        "category": "Small",
+        "weight_range": "2kg - 25kg",
+        "registration_required": true,
+        "pilot_license_required": true,
+        "max_altitude_ft": 400
+      },
+      {
+        "category": "Medium",
+        "weight_range": "25kg - 150kg",
+        "registration_required": true,
+        "pilot_license_required": true,
+        "max_altitude_ft": 400
+      },
+      {
+        "category": "Large",
+        "weight_range": "> 150kg",
+        "registration_required": true,
+        "pilot_license_required": true,
+        "max_altitude_ft": 400
+      }
+    ],
+    "airspace_zones": {
+      "green": "Permission-free up to 400ft (120m)",
+      "yellow": "Controlled airspace; requires ATC/AFB permission",
+      "red": "No-fly zone; requires Central Government authorization"
+    },
+    "standard_operating_procedures": {
+      "pre_flight": [
+        "Verify Unique Identification Number (UIN) on Digital Sky",
+        "Check interactive airspace map for zone restrictions",
+        "Ensure third-party insurance is active",
+        "Physical inspection of propellers, battery, and GPS"
+      ],
+      "in_flight": [
+        "Maintain Visual Line of Sight (VLOS) at all times",
+        "Observe 'No Permission, No Takeoff' (NPNT) protocols",
+        "Respect privacy and avoid overflight of prohibited areas"
+      ],
+      "post_flight": [
+        "Log flight duration and pilot ID in Digital Sky logbook",
+        "Report any accidents/incidents via Form D-5 within 48 hours",
+        "Perform post-flight maintenance check"
+      ]
+    }
+  }
+}

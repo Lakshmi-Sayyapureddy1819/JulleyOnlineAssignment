@@ -1,0 +1,54 @@
+{
+  "drone_regulation_database": {
+    "metadata": {
+      "version": "4.0 (2026 Consolidated)",
+      "last_updated": "2026-02-16",
+      "regulatory_authority": "Directorate General of Civil Aviation (DGCA)",
+      "primary_laws": ["Drone Rules, 2021 (Amended 2026)", "Aircraft Act, 1934", "Draft Civil Drone Bill 2025"],
+      "platform": "Digital Sky Platform",
+      "coordinate_system": "WGS 84 (EPSG:4326)"
+    },
+    "classifications": [
+      { "category": "Nano", "weight": "≤ 250g", "uin_required": false, "license_required": false, "insurance_required": false, "max_alt_ft": 50 },
+      { "category": "Micro", "weight": "250g - 2kg", "uin_required": true, "license_required": true, "insurance_required": true, "max_alt_ft": 400 },
+      { "category": "Small", "weight": "2kg - 25kg", "uin_required": true, "license_required": true, "insurance_required": true, "max_alt_ft": 400 },
+      { "category": "Medium", "weight": "25kg - 150kg", "uin_required": true, "license_required": true, "insurance_required": true, "max_alt_ft": 400 },
+      { "category": "Large", "weight": "> 150kg", "uin_required": true, "license_required": true, "insurance_required": true, "max_alt_ft": 400 }
+    ],
+    "airspace_management": {
+      "green_zone": {
+        "definition": "Uncontrolled airspace up to 400ft (120m)",
+        "permission": "No prior permission required",
+        "buffer_zone": "8-12km from airport perimeter (limit 200ft)"
+      },
+      "yellow_zone": {
+        "definition": "Controlled airspace / 5-8km from airport",
+        "permission": "ATC/Airforce Permission Required via Digital Sky",
+        "restriction": "NPNT Trigger Active"
+      },
+      "red_zone": {
+        "definition": "Prohibited areas (Military, Borders, VVIP areas)",
+        "permission": "Central Government Approval Only",
+        "restriction": "Strict No-Fly"
+      }
+    },
+    "risk_assessment_framework": {
+      "OPEN": { "level": "Low", "criteria": "VLOS, < 25kg", "iso": "ISO 21384-4" },
+      "SPECIFIC": { "level": "Medium", "criteria": "BVLOS/Over People", "framework": "SORA", "iso": ["ISO 21384-2", "ISO 21384-3"] },
+      "CERTIFIED": { "level": "High", "criteria": "Dangerous Goods/Human Transport", "standard": "AS9100 / Full Airworthiness" }
+    },
+    "penalties_and_enforcement": [
+      { "violation": "Flying without UIN", "max_fine_inr": 50000, "action": "Drone Seizure" },
+      { "violation": "Flying in Red Zone", "max_fine_inr": 100000, "action": "Cognizable Offense / Imprisonment potential" },
+      { "violation": "Unauthorized Import", "max_fine_inr": 500000, "action": "Confiscation" },
+      { "violation": "Operating without License", "max_fine_inr": 25000, "action": "Permit Suspension" },
+      { "violation": "Security Breach/Dangerous Goods", "max_fine_inr": 10000000, "action": "Up to 3 years imprisonment" }
+    ],
+    "iso_standards_library": {
+      "ISO_21384_2": "UAS Component Safety & Manufacturing",
+      "ISO_21384_3": "Operational Procedures & Safety Management",
+      "ISO_23665": "UAS Personnel Training Curriculum",
+      "AS9100": "Aerospace Quality Management Standard"
+    }
+  }
+}

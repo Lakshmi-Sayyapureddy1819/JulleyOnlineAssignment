@@ -1,12 +1,26 @@
+# Backend & API
 fastapi
 uvicorn
-streamlit
-chromadb
-sentence-transformers
+python-dotenv
+pydantic>=2.0.0
+python-multipart
+
+# AI, LLM & RAG
 openai
+langchain
+langchain-openai
+langchain-community
+langchain-chroma
+langchain-core
+chromadb
+tiktoken
+
+# Data Processing & Visualization
 pandas
 numpy
-pydantic
-python-dotenv
+plotly
+
+# Frontend
+streamlit
 requests
-pytest
+python-multipart>=0.0.7

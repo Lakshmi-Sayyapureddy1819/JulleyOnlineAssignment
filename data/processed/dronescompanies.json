@@ -1,0 +1,89 @@
+{
+  "indian_drone_ecosystem_master_2026": {
+    "metadata": {
+      "version": "5.0",
+      "last_updated": "2026-02-16",
+      "authority": "Directorate General of Civil Aviation (DGCA)",
+      "market_size_est": "$470M - $1.2B (USD)",
+      "total_registered_drones": 13000,
+      "certified_manufacturers_count": 48
+    },
+    "regulatory_framework": {
+      "categories": [
+        { "class": "Nano", "weight": "≤ 250g", "uin": false, "license": false, "insurance": false, "max_alt_ft": 50 },
+        { "class": "Micro", "weight": "250g - 2kg", "uin": true, "license": true, "insurance": true, "max_alt_ft": 400 },
+        { "class": "Small", "weight": "2kg - 25kg", "uin": true, "license": true, "insurance": true, "max_alt_ft": 400 },
+        { "class": "Medium", "weight": "25kg - 150kg", "uin": true, "license": true, "insurance": true, "max_alt_ft": 400 },
+        { "class": "Large", "weight": "> 150kg", "uin": true, "license": true, "insurance": true, "max_alt_ft": 400 }
+      ],
+      "airspace_zones": {
+        "green": "Uncontrolled up to 400ft; no permission required.",
+        "yellow": "Controlled; prior ATC/AF permission via Digital Sky.",
+        "red": "No-fly; Central Government approval required."
+      },
+      "penalties_inr": {
+        "uin_violation": 50000,
+        "pilot_license_violation": 25000,
+        "red_zone_intrusion": 100000,
+        "dangerous_goods": 10000000
+      }
+    },
+    "publicly_listed_companies": [
+      {
+        "name": "ideaForge Technology",
+        "ticker": "IDEAFORGE",
+        "market_cap_cr": 2099,
+        "market_share": "50% of UAS market",
+        "focus": "Defense & Intelligence VTOL"
+      },
+      {
+        "name": "Zen Technologies",
+        "ticker": "ZENTEC",
+        "market_cap_cr": 12550,
+        "focus": "Anti-Drone Systems & Simulators"
+      },
+      {
+        "name": "Paras Defence & Space Tech",
+        "ticker": "PARAS",
+        "market_cap_cr": 5914,
+        "subsidiary": "Paras Aerospace (Agri/Mapping)"
+      },
+      {
+        "name": "Hindustan Aeronautics (HAL)",
+        "ticker": "HAL",
+        "market_cap_cr": 321895,
+        "innovation": "CATS Warrior (UCAV Swarms)"
+      }
+    ],
+    "top_private_startups": {
+      "deep_tech_defense": [
+        { "name": "NewSpace Research & Tech", "funding": "$73.2M", "innovation": "Abhimanyu Stealth UAV" },
+        { "name": "Raphe mPhibr", "funding": "$145M", "innovation": "100% Indigenous Component Stack" }
+      ],
+      "agriculture_agritech": [
+        { "name": "Garuda Aerospace", "hq": "Chennai", "specialization": "DaaS & Rural Training" },
+        { "name": "IoTechWorld Avigation", "hq": "Gurugram", "flagship": "Agribot" },
+        { "name": "Marut Drones", "hq": "Hyderabad", "innovation": "Seedcopter Reforestation" }
+      ],
+      "logistics_delivery": [
+        { "name": "TechEagle", "hq": "Gurugram", "platform": "Vertiplane X3 (Hybrid e-VTOL)" },
+        { "name": "Skye Air Mobility", "hq": "Noida", "specialization": "Healthcare & E-commerce" },
+        { "name": "Redwing Labs", "hq": "Bengaluru", "focus": "Critical Medical Logistics" }
+      ],
+      "software_and_ai": [
+        { "name": "Skylark Drones", "hq": "Bengaluru", "product": "Worksite Intelligence Platform" },
+        { "name": "UrbanMatrix", "hq": "Bengaluru", "innovation": "4G/5G Edge-AI Drones" },
+        { "name": "FlytBase", "hq": "Pune", "specialization": "Autonomous Docking Software" }
+      ]
+    },
+    "anti_drone_specialists": [
+      { "name": "Grene Robotics", "system": "Indrajaal (Autonomous Dome Def)" },
+      { "name": "Bharat Electronics (BEL)", "system": "IDDIS (Integrated Detection)" },
+      { "name": "Big Bang Boom Solutions", "system": "Electronic Countermeasures" }
+    ],
+    "future_mobility_evtol": [
+      { "name": "The ePlane Company", "hq": "IIT Madras", "focus": "Electric Air Taxis" },
+      { "name": "Sarla Aviation", "partnership": "Archer Aviation", "goal": "Urban Air Taxis 2026" }
+    ]
+  }
+}

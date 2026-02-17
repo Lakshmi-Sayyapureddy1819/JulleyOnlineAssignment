@@ -1,52 +1,64 @@
-# Drone Intelligence System for India
+# 🛸 Drone Intelligence System for India
 
-A multi-component architecture involving data engineering, a vector database for RAG, an MCP (Model Context Protocol) server for specialized logic, and a FastAPI-driven backend.
+An advanced AI-driven platform for analyzing drone regulations, calculating business ROI, and simulating flight telemetry within the Indian ecosystem. This project was developed as part of the JulleyOnline AI/ML Internship.
 
-## 📂 Repository Structure
+## 🌟 Key Features
+* **Agentic RAG System**: Query Drone Rules 2021 and industry datasets using OpenAI-powered semantic search.
+* **MCP Calculation Tools**: Deterministic calculators for flight endurance and ROI analysis.
+* **Synthetic Data Engine**: Generates 1,000+ flight logs for compliance and analytics testing.
+* **Interactive Dashboard**: A Streamlit interface featuring a real-time chatbot and data visualizations.
 
-```plaintext
+---
+
+## 🏗️ Project Structure
+```text
 drone-intelligence-system/
-├── data/                    # Phase 2: Dataset Storage
-│   ├── raw/                 # Research docs on Drone Rules 2021 & Indian use cases
-│   ├── processed/           # Cleaned CSVs of drone specs & RPTO institutes
-│   └── synthetic/           # Generated flight logs & ROI scenario data
-├── rag/                     # Phase 3: RAG Components
-│   ├── vector_db/           # Persistent ChromaDB/FAISS storage
-│   ├── embedder.py          # Embedding generation (OpenAI/HuggingFace)
-│   └── retriever.py         # Semantic search & re-ranking logic
-├── mcp_server/              # Phase 4: Model Context Protocol Server
-│   ├── server.py            # MCP server entry point
-│   └── tools/               # Calculation logic
-│       ├── flight_calc.py   # Flight time & range estimator
-│       ├── roi_calc.py      # Break-even & profitability metrics
-│       ├── compliance.py    # Digital Sky zone & permit checker
-│       └── assistant.py     # Drone selection logic
-├── api/                     # Phase 5: FastAPI Backend
-│   ├── main.py              # App entry point & endpoint routing
-│   ├── routes/              # /chat, /upload, /calculate endpoints
-│   ├── models/              # Pydantic data schemas
-│   └── services/            # Glue logic between API, RAG, and MCP
-├── frontend/                # Phase 6: Streamlit/React Dashboard
-│   ├── public/              # Static assets
-│   ├── src/                 # Dashboard components & Chat UI
-│   └── .env                 # Frontend configuration
-├── tests/                   # Phase 7: Quality Assurance
-│   ├── unit/                # Tests for calculators & logic
-│   └── integration/         # API & RAG flow testing
-├── scripts/                 # Utility Scripts
-│   ├── data_gen.py          # Synthetic data generation scripts
-│   └── setup_db.py          # Vector database initialization
-├── docs/                    # Documentation
-│   ├── architecture.png     # System diagrams
-│   ├── api_spec.md          # API documentation
-│   └── user_guide.md        # Dashboard instructions
-├── Dockerfile               # Container configuration
-├── docker-compose.yml       # Multi-container orchestration
-├── requirements.txt         # Python dependencies
-└── README.md                # Setup & submission details
+├── api/                  # FastAPI Backend & Endpoints
+├── data/                 # Raw, Processed, and Synthetic Datasets
+├── docs/                 # Documentation & Architecture Diagrams
+├── frontend/             # Streamlit Dashboard Source
+├── mcp_server/           # Model Context Protocol (Calculators)
+├── rag/                  # Vector Database & Retriever Logic
+├── scripts/              # Data Generation & DB Setup Scripts
+└── requirements.txt      # Project Dependencies
 ```
 
-## 🛠️ Key Implementation Components
-- **Data Ingestion**: Scripts to turn raw PDFs into searchable vectors.
-- **Tool Intelligence**: MCP server acting as the "calculator brain".
-- **API Gateway**: Orchestrator for RAG and MCP logic.
+## 🚀 Quick Start Guide
+
+### 1. Environment Setup
+Create a virtual environment and install dependencies:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+```
+
+### 2. Configuration
+Create a `.env` file in the root directory:
+
+```env
+OPENAI_API_KEY=your_actual_key_here
+```
+
+### 3. Data & Database Initialization
+Generate the synthetic datasets and initialize the ChromaDB vector store:
+
+```bash
+python scripts/data_generation.py
+python scripts/database_setup.py
+```
+
+### 4. Launch the Application
+Run the backend and frontend in separate terminals:
+
+**Backend:** `uvicorn api.main:app --reload`
+
+**Frontend:** `streamlit run frontend/src/app.py`
+
+## 🛠️ Tech Stack
+* **Language**: Python 3.12
+* **AI Framework**: LangChain, OpenAI GPT-4o Mini
+* **Vector DB**: ChromaDB
+* **API Layer**: FastAPI
+* **Visualization**: Plotly, Streamlit

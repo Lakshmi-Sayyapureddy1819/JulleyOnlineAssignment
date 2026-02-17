@@ -1,0 +1,62 @@
+{
+  "country": "India",
+  "regulatory_body": "Directorate General of Civil Aviation (DGCA)",
+  "official_portal": "DigitalSky",
+  "last_updated": "February 2026",
+  "classification_by_weight": [
+    {
+      "category": "Nano",
+      "weight": "≤ 250 g",
+      "registration": "Not required for recreational use",
+      "pilot_license": "Not required for recreational use",
+      "altitude_limit_meters": 15
+    },
+    {
+      "category": "Micro",
+      "weight": "250 g - 2 kg",
+      "registration": "Mandatory (UIN)",
+      "pilot_license": "Required for commercial use",
+      "altitude_limit_meters": 60
+    },
+    {
+      "category": "Small",
+      "weight": "2 kg - 25 kg",
+      "registration": "Mandatory (UIN)",
+      "pilot_license": "Remote Pilot Certificate (RPC) required",
+      "altitude_limit_meters": 120
+    },
+    {
+      "category": "Medium",
+      "weight": "25 kg - 150 kg",
+      "registration": "Mandatory (UIN)",
+      "pilot_license": "Remote Pilot Certificate (RPC) required",
+      "altitude_limit_meters": 120
+    },
+    {
+      "category": "Large",
+      "weight": "> 150 kg",
+      "registration": "Mandatory (UIN)",
+      "pilot_license": "Remote Pilot Certificate (RPC) required",
+      "altitude_limit_meters": 120
+    }
+  ],
+  "penalty_database": {
+    "monetary_fines": [
+      { "violation": "Flying without UIN (Registration)", "max_fine_inr": 50000, "additional_risk": "Drone seizure" },
+      { "violation": "Operating without Pilot License (RPC)", "max_fine_inr": 25000, "notes": "Mandatory for Micro and above (commercial)" },
+      { "violation": "Flying in Red Zones without permission", "max_fine_inr": 100000, "category": "Criminal offense" },
+      { "violation": "Unauthorized Drone Import", "max_fine_inr": 500000, "statute": "Customs Act & Drone Rules" }
+    ],
+    "criminal_liability_2025_bill": [
+      { "violation": "Security-related unauthorized flight", "max_imprisonment": "3 years", "nature": "Cognizable & Non-compoundable" },
+      { "violation": "Obstruction of law enforcement", "max_imprisonment": "3 months", "fine_inr": 50000 },
+      { "violation": "Repeat offenses", "max_imprisonment": "6 months", "fine_inr": 100000 }
+    ]
+  },
+  "operational_rules": {
+    "visual_line_of_sight": "Mandatory (VLOS)",
+    "max_legal_altitude_meters": 120,
+    "no_fly_zones": "Red Zones (Prohibited), Yellow Zones (Controlled/Permit required)",
+    "mandatory_equipment": ["GPS", "Return-to-Home (RTH)", "Geo-fencing", "NPNT compliance"]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "rules": [
+        {
+            "id": "R1",
+            "title": "UIN Requirement",
+            "desc": "Mandatory for drones >250g"
+        },
+        {
+            "id": "R2",
+            "title": "No-Fly Zones",
+            "desc": "Check Digital Sky map for Red Zones"
+        }
+    ],
+    "penalties": [
+        {
+            "offence": "Flying in Red Zone",
+            "fine": 100000
+        }
+    ]
+}
