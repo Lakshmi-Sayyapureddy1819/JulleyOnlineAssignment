@@ -1,3 +1,4 @@
+
 import os
 import streamlit as st
 import requests
@@ -17,10 +18,14 @@ with tab1:
     user_msg = st.chat_input("Ask about Drone Rules 2021 or ROI...")
     if user_msg:
         try:
-            res = requests.post(f"{BACKEND_URL}/chat", json={"prompt": user_msg}).json()
-            with st.chat_message("assistant"):
-                st.write(res['answer'])
-                st.caption(f"Sources: {res['sources']}")
+            response = requests.post(f"{BACKEND_URL}/chat", json={"prompt": user_msg})
+            if response.status_code == 200:
+                res = response.json()
+                with st.chat_message("assistant"):
+                    st.write(res.get('answer', "No answer received."))
+                    st.caption(f"Sources: {res.get('sources', [])}")
+            else:
+                st.error(f"Error {response.status_code}: {response.text}")
         except requests.exceptions.ConnectionError:
             st.error("Could not connect to the API. Please ensure 'python api/main.py' is running.")
 
@@ -32,8 +37,11 @@ with tab2:
         rev = st.number_input("Daily Revenue", value=5000)
         if st.button("Analyze ROI"):
             try:
-                data = requests.get(f"{BACKEND_URL}/calculate/roi?inv={inv}&rev={rev}").json()
-                st.json(data)
+                response = requests.get(f"{BACKEND_URL}/calculate/roi?inv={inv}&rev={rev}")
+                if response.status_code == 200:
+                    st.json(response.json())
+                else:
+                    st.error(f"Error {response.status_code}: {response.text}")
             except requests.exceptions.ConnectionError:
                 st.error("API connection failed. Is the backend running?")
     with col2:
@@ -65,48 +73,64 @@ with tab3:
                 req_params = {"weight_kg": w, "zone": z, "altitude_ft": alt}
                 response = requests.get(f"{BACKEND_URL}/tools/regulation-check", params=req_params)
                 
-                # 2. Debug Display
-                if debug_mode:
-                    st.write("---")
-                    st.write(f"**Requesting:** `{response.url}`")
-                    st.write("**Raw Backend Response:**")
-                    st.json(response.json()) # This shows the full JSON object
-                    st.write("---")
+                # Store debug info
+                st.session_state['debug_url'] = response.url
+                try:
+                    st.session_state['debug_json'] = response.json()
+                except:
+                    st.session_state['debug_json'] = {"error": "Could not parse JSON"}
                 
                 if response.status_code == 200:
-                    res = response.json()
-                    
-                    # USE .get() TO AVOID KEYERROR
-                    flight_status = res.get('flight_status', 'N/A')
-                    category = res.get('drone_category', 'N/A')
-                    remarks = res.get('remarks', [])
-
-                    st.subheader(f"Status: {flight_status}")
-                    st.info(f"Category: **{category}**")
-                    for r in remarks:
-                        st.warning(r)
+                    st.session_state['compliance_result'] = response.json()
                     
                     # Fetch PDF for download button
+                    res = response.json()
                     pdf_params = {
                         "weight": w, "zone": z, "alt": alt, 
-                        "category": category, "status": flight_status
+                        "category": res.get('drone_category', 'Unknown Category'), 
+                        "status": res.get('flight_status', 'Unknown Status')
                     }
                     pdf_response = requests.get(f"{BACKEND_URL}/tools/download-report", params=pdf_params)
 
                     if pdf_response.status_code == 200:
-                        st.download_button(
-                            label="📥 Download PDF Report",
-                            data=pdf_response.content,
-                            file_name="Drone_Report.pdf",
-                            mime="application/pdf"
-                        )
+                        st.session_state['compliance_pdf'] = pdf_response.content
                     else:
+                        st.session_state['compliance_pdf'] = None
                         st.error("Could not generate PDF. Check backend logs.")
 
                 else:
                     st.error(f"Backend Error: {response.status_code}. Make sure api/main.py is running.")
             except requests.exceptions.ConnectionError:
                 st.error("API connection failed. Is the backend running?")
+
+        # Display results from session state
+        if debug_mode and 'debug_json' in st.session_state:
+            st.write("---")
+            st.write(f"**Requesting:** `{st.session_state.get('debug_url', '')}`")
+            st.write("**Raw Backend Response:**")
+            st.json(st.session_state['debug_json'])
+            st.write("---")
+
+        if 'compliance_result' in st.session_state:
+            res = st.session_state['compliance_result']
+            
+            # Use .get() to provide a fallback and avoid KeyError
+            flight_status = res.get('flight_status', 'Unknown Status')
+            category = res.get('drone_category', 'Unknown Category')
+            remarks = res.get('remarks', [])
+
+            st.subheader(f"Status: {flight_status}")
+            st.info(f"Category: **{category}**")
+            for r in remarks:
+                st.warning(r)
+            
+            if 'compliance_pdf' in st.session_state and st.session_state['compliance_pdf']:
+                st.download_button(
+                    label="📥 Download PDF Report",
+                    data=st.session_state['compliance_pdf'],
+                    file_name="Drone_Report.pdf",
+                    mime="application/pdf"
+                )
 
     with col2:
         st.subheader("Drone Finder")
@@ -117,6 +141,8 @@ with tab3:
             params = {}
             if category != "All":
                 params["category"] = category
+            params["budget"] = budget
+            params["endurance"] = endurance
             
             # Ensure this URL matches your FastAPI address
             response = requests.get(f"{BACKEND_URL}/tools/find-drones", params=params)

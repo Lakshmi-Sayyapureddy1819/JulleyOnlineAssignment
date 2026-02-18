@@ -24,3 +24,5 @@ streamlit
 requests
 python-multipart>=0.0.7
 fpdf2
+pytest
+httpx

@@ -18,15 +18,15 @@ from mcp_server.tools.roi_calc import get_roi_analysis
 from mcp_server.tools.compliance import check_regulation_compliance
 from mcp_server.tools.recommendation import recommend_drones
 from mcp_server.server import mcp_engine
+from api.routes import chat
 
 app = FastAPI(title="India Drone Intel API")
 
-class ChatInput(BaseModel):
-    prompt: str
+app.include_router(chat.router, tags=["AI Chat"])
 
-@app.post("/chat")
-async def chat(input_data: ChatInput):
-    return query_drone_knowledge(input_data.prompt)
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the India Drone Intelligence API"}
 
 @app.get("/calculate/flight")
 async def flight_tool(bat: float, weight: float, pay: float):
@@ -63,9 +63,9 @@ async def regulation_check(weight_kg: float, zone: str, altitude_ft: float):
         status = "🚫 No-Fly Zone"
         remarks.append("Red Zone: Unauthorized flight.")
 
-    # RETURN THE KEYS THE FRONTEND EXPECTS
+    # REQUIRED: Return keys exactly as the frontend expects
     return {
-        "flight_status": status,      # <--- This matches your error
+        "flight_status": status,
         "drone_category": category,
         "remarks": remarks
     }
@@ -135,7 +135,7 @@ async def get_recommendation(budget: float, use: str):
     return mcp_engine.run_tool("recommend_drone", {"max_budget": budget, "primary_use": use})
 
 @app.get("/tools/find-drones")
-async def find_drones(category: str = None):
+async def find_drones(category: str = None, budget: float = None, endurance: int = None):
     # This simulates a database lookup from your processed/drone_models.csv
     import pandas as pd
     try:
@@ -143,10 +143,11 @@ async def find_drones(category: str = None):
         data_path = os.path.join(base_path, "data", "processed", "drone_models.csv")
         df = pd.read_csv(data_path)
         if category:
-            # Filter drones by category (Nano, Micro, etc.)
-            # Using 'class' column as per data generation script
-            filtered_df = df[df['class'].str.lower() == category.lower()]
-            return filtered_df.to_dict(orient="records")
+            df = df[df['class'].str.lower() == category.lower()]
+        if budget:
+            df = df[df['price_inr'] <= budget]
+        if endurance:
+            df = df[df['endurance_min'] >= endurance]
         return df.to_dict(orient="records")
     except Exception as e:
         return {"error": str(e)}

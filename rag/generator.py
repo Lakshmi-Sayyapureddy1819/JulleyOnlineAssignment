@@ -39,5 +39,5 @@ def generate_drone_response(user_query: str):
     
     return {
         "answer": response.content,
-        "citations": sources
+        "sources": sources
     }
