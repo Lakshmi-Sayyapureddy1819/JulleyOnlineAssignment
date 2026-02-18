@@ -17,6 +17,7 @@ from mcp_server.tools.flight_calc import get_flight_estimates
 from mcp_server.tools.roi_calc import get_roi_analysis
 from mcp_server.tools.compliance import check_regulation_compliance
 from mcp_server.tools.recommendation import recommend_drones
+from mcp_server.server import mcp_engine
 
 app = FastAPI(title="India Drone Intel API")
 
@@ -127,6 +128,11 @@ async def download_report(weight: float, zone: str, alt: float, category: str, s
 @app.get("/recommend/drone")
 async def recommend_tool(budget: float, endurance: int):
     return recommend_drones(budget, endurance)
+
+@app.get("/tools/recommend")
+async def get_recommendation(budget: float, use: str):
+    # This calls the MCP Server, which then calls the Selection Assistant
+    return mcp_engine.run_tool("recommend_drone", {"max_budget": budget, "primary_use": use})
 
 @app.get("/tools/find-drones")
 async def find_drones(category: str = None):

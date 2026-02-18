@@ -1,7 +1,11 @@
+import os
 import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
+
+# Get Backend URL from environment or default to localhost
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 st.set_page_config(page_title="Drone Intel Dashboard", layout="wide")
 st.title("Drone Intelligence System - India")
@@ -13,7 +17,7 @@ with tab1:
     user_msg = st.chat_input("Ask about Drone Rules 2021 or ROI...")
     if user_msg:
         try:
-            res = requests.post("http://localhost:8000/chat", json={"prompt": user_msg}).json()
+            res = requests.post(f"{BACKEND_URL}/chat", json={"prompt": user_msg}).json()
             with st.chat_message("assistant"):
                 st.write(res['answer'])
                 st.caption(f"Sources: {res['sources']}")
@@ -28,7 +32,7 @@ with tab2:
         rev = st.number_input("Daily Revenue", value=5000)
         if st.button("Analyze ROI"):
             try:
-                data = requests.get(f"http://localhost:8000/calculate/roi?inv={inv}&rev={rev}").json()
+                data = requests.get(f"{BACKEND_URL}/calculate/roi?inv={inv}&rev={rev}").json()
                 st.json(data)
             except requests.exceptions.ConnectionError:
                 st.error("API connection failed. Is the backend running?")
@@ -59,7 +63,7 @@ with tab3:
             try:
                 # 1. Make the request
                 req_params = {"weight_kg": w, "zone": z, "altitude_ft": alt}
-                response = requests.get("http://localhost:8000/tools/regulation-check", params=req_params)
+                response = requests.get(f"{BACKEND_URL}/tools/regulation-check", params=req_params)
                 
                 # 2. Debug Display
                 if debug_mode:
@@ -87,7 +91,7 @@ with tab3:
                         "weight": w, "zone": z, "alt": alt, 
                         "category": category, "status": flight_status
                     }
-                    pdf_response = requests.get("http://localhost:8000/tools/download-report", params=pdf_params)
+                    pdf_response = requests.get(f"{BACKEND_URL}/tools/download-report", params=pdf_params)
 
                     if pdf_response.status_code == 200:
                         st.download_button(
@@ -115,7 +119,7 @@ with tab3:
                 params["category"] = category
             
             # Ensure this URL matches your FastAPI address
-            response = requests.get("http://localhost:8000/tools/find-drones", params=params)
+            response = requests.get(f"{BACKEND_URL}/tools/find-drones", params=params)
             
             if response.status_code == 200:
                 drones = response.json()
