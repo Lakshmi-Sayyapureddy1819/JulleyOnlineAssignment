@@ -1,20 +1,24 @@
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from api.models.schemas import ChatRequest, ChatResponse
 from api.services.orchestrator import drone_orchestrator
 
 router = APIRouter()
 
-class ChatInput(BaseModel):
-    prompt: str
-
-@router.post("/chat")
-async def chat_endpoint(input_data: ChatInput):
+@router.post("/chat", response_model=ChatResponse)
+async def chat_endpoint(input_data: ChatRequest):
     """
-    Handles AI communication by routing queries to the Orchestrator.
+    Main entry point for AI communication.
+    Routes queries to the Orchestrator for RAG or Tool selection.
     """
     try:
         # Pass the prompt to the service layer
-        response = await drone_orchestrator.process_query(input_data.prompt)
-        return response
+        result = await drone_orchestrator.process_query(input_data.prompt)
+        
+        # Ensure result matches response model
+        # orchestrator returns dict with "answer" and "sources"
+        return ChatResponse(
+            answer=result.get("answer", "No answer generated."),
+            sources=result.get("sources", [])
+        )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Chat Error: {str(e)}")

@@ -143,7 +143,7 @@ def test_selection_assistant():
     st.info("Calculate estimated flight endurance based on your drone's specifications.")
 
     # 1. Create columns for organized user input
-    f_col1, f_col2, f_col3 = st.columns(3)
+    f_col1, f_col2, f_col3, f_col4 = st.columns(4)
 
     with f_col1:
         bat_cap = st.number_input("Battery Capacity (Ah)", min_value=1.0, value=10.0, step=0.5)
@@ -151,12 +151,14 @@ def test_selection_assistant():
         drone_w = st.number_input("Drone Weight (kg)", min_value=0.1, value=2.0, step=0.1)
     with f_col3:
         payload_w = st.number_input("Payload Weight (kg)", min_value=0.0, value=0.5, step=0.1)
+    with f_col4:
+        wind_cond = st.selectbox("Wind Condition", ["Calm", "Moderate", "High Wind"])
 
     # 2. Action Button
     if st.button("Calculate Flight Time"):
         try:
             # Call your FastAPI backend
-            response = requests.get(f"{BACKEND_URL}/calculate/flight?bat={bat_cap}&weight={drone_w}&pay={payload_w}")
+            response = requests.get(f"{BACKEND_URL}/calculate/flight?bat={bat_cap}&weight={drone_w}&pay={payload_w}&wind={wind_cond}")
             
             if response.status_code == 200:
                 result = response.json()
@@ -173,12 +175,25 @@ def test_selection_assistant():
 with tab2:
     col1, col2 = st.columns(2)
     with col1:
-        st.subheader("ROI Tool")
-        inv = st.number_input("Investment", value=600000)
-        rev = st.number_input("Daily Revenue", value=5000)
-        if st.button("Analyze ROI"):
+        st.subheader("💰 ROI & Business Case Calculator")
+        use_case = st.selectbox("Select Use Case", ["Agriculture", "Surveying", "Delivery", "General"])
+        
+        inv = st.number_input("Initial Investment (INR)", value=500000)
+        op_costs = st.number_input("Monthly Op-Ex (Maintenance/Pilot)", value=25000)
+        rev = st.number_input("Projected Monthly Revenue (INR)", value=80000)
+        
+        if st.button("Calculate ROI"):
             try:
-                response = requests.get(f"{BACKEND_URL}/calculate/roi?inv={inv}&rev={rev}")
+                # Backend expects daily revenue for the simple calc, but UI asks for monthly.
+                # Let's convert monthly revenue to daily for the backend call, or update backend to take monthly.
+                # Logic: The backend tool logic was: daily_profit = daily_revenue - daily_op_cost.
+                # If we pass monthly revenue as daily_revenue, the numbers will be huge.
+                # Let's divide by 30 here to pass "daily" equivalents, or better yet, pass raw and let backend handle?
+                # My backend update for ROI calc was: daily_profit = daily_revenue - (operational_costs / 30).
+                # So backend expects 'daily_revenue'.
+                daily_rev = rev / 30
+                
+                response = requests.get(f"{BACKEND_URL}/calculate/roi", params={"inv": inv, "rev": daily_rev, "op_costs": op_costs, "use_case": use_case})
                 if response.status_code == 200:
                     st.json(response.json())
                 else:
@@ -187,31 +202,33 @@ with tab2:
                 st.error("API connection failed. Is the backend running?")
     with col2:
         st.subheader("Synthetic Flight Data View")
-        df = pd.read_csv("data/synthetic/flight_logs.csv")
-        fig = px.scatter(df, x="altitude_ft", y="battery_drain_%", color="zone")
-        st.plotly_chart(fig)
+        try:
+            df = pd.read_csv("data/synthetic/flight_logs.csv")
+            fig = px.scatter(df, x="altitude_ft", y="battery_drain_%", color="zone")
+            st.plotly_chart(fig)
+        except Exception:
+            st.info("Synthetic flight logs not found. Run data generation script to view this.")
 
 with tab3:
     col1, col2 = st.columns(2)
     with col1:
         # --- Header and Toggle ---
-        st.header("⚖️ Regulation Checker")
+        st.header("⚖️ Regulation Compliance Checker")
         debug_mode = st.toggle("Enable Debug Mode", value=False)
 
         with st.container(border=True):
-            col_a, col_b, col_c = st.columns(3)
-            
+            col_a, col_b = st.columns(2)
             with col_a:
                 w = st.number_input("Drone Weight (kg)", min_value=0.0, value=1.5, step=0.1)
+                purpose = st.radio("Intended Use", ["Recreational", "Commercial"])
             with col_b:
                 z = st.selectbox("Airspace Zone", ["Green", "Yellow", "Red"])
-            with col_c:
                 alt = st.slider("Altitude (ft)", 0, 1000, 100)
 
         if st.button("Check Compliance"):
             try:
                 # 1. Make the request
-                req_params = {"weight_kg": w, "zone": z, "altitude_ft": alt}
+                req_params = {"weight_kg": w, "zone": z, "altitude_ft": alt, "purpose": purpose}
                 response = requests.get(f"{BACKEND_URL}/tools/regulation-check", params=req_params)
                 
                 # Store debug info
@@ -274,16 +291,24 @@ with tab3:
                 )
 
     with col2:
-        st.subheader("Drone Finder")
+        st.subheader("Drone Selection Assistant")
         category = st.selectbox("Category", ["All", "Nano", "Micro", "Small", "Medium", "Large"])
-        budget = st.slider("Budget (INR)", 100000, 2000000, 500000)
-        endurance = st.slider("Min Endurance (mins)", 10, 120, 30)
+        primary_use = st.selectbox("Primary Use Case", ["Agriculture", "Photography", "Inspection", "Delivery", "Mapping"])
+        budget = st.slider("Max Budget (INR)", 100000, 2000000, 500000)
+        min_flight_time = st.slider("Min Flight Time (mins)", 10, 120, 30)
+        
         if st.button("Find Drones"):
             params = {}
             if category != "All":
                 params["category"] = category
             params["budget"] = budget
-            params["endurance"] = endurance
+            params["min_flight_time"] = min_flight_time
+            # params["primary_use"] = primary_use # Backend find-drones doesn't strictly logic-check use case yet, but could.
+            # actually selection_assistant.recommend_drone DOES logic check use case.
+            # But here we are calling /tools/find-drones which is a direct db lookup.
+            # /tools/recommend uses the specialized tool logic.
+            # The prompt asked for "Drone Selection Assistant" with "Technical Requirements".
+            # I added min_flight_time to /tools/find-drones logic in api/main.py.
             
             # Ensure this URL matches your FastAPI address
             response = requests.get(f"{BACKEND_URL}/tools/find-drones", params=params)

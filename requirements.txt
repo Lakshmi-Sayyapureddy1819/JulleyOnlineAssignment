@@ -3,6 +3,7 @@ fastapi
 uvicorn
 python-dotenv
 pydantic>=2.0.0
+python-multipart>=0.0.7
 
 # AI, LLM & RAG
 openai
@@ -18,12 +19,13 @@ tiktoken
 pandas
 numpy
 plotly
+fpdf2
+pypdf>=3.0.0
 
 # Frontend
 streamlit
 requests
-python-multipart>=0.0.7
-fpdf2
+
+# Testing
 pytest
 httpx
-pypdf>=3.0.0
