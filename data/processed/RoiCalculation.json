@@ -1,0 +1,165 @@
+{
+  "drone_roi_scenarios_expanded": {
+    "healthcare_logistics": {
+      "use_case": "Medical Supply, Vaccine, Organ & Emergency Blood Delivery",
+      "impact": "Ultra-fast last-mile delivery in critical care scenarios",
+      "roi_metrics": {
+        "delivery_speed_improvement": "4x faster than road",
+        "response_time_reduction": "50-80%",
+        "cost_reduction_target_2034": "70%",
+        "coverage_increase_rural": "3x improvement"
+      },
+      "market_projection": {
+        "global_2026_usd": 2050000000,
+        "global_2030_usd": 7800000000,
+        "india_2026_usd": 40000000,
+        "india_2030_usd": 320000000
+      },
+      "technology_stack": [
+        "BVLOS navigation",
+        "Cold-chain payload systems",
+        "AI route optimization",
+        "Autonomous landing pads"
+      ],
+      "regulatory_status_india": "Pilot programs active under DGCA sandbox",
+      "risk_factors": [
+        "Airspace regulation delays",
+        "Battery endurance limits",
+        "Weather dependency"
+      ]
+    },
+
+    "forestry_environmental": {
+      "use_case": "Forest Health Mapping, Wildlife Tracking & Carbon Monitoring",
+      "impact": "Large-scale ecological monitoring without human intrusion",
+      "roi_metrics": {
+        "survey_cost_savings": "50%",
+        "disease_detection_accuracy": "82.5%+",
+        "water_conservation": "90%",
+        "carbon_reduction": "25%"
+      },
+      "market_projection": {
+        "global_2026_usd": 1200000000,
+        "global_2030_usd": 4200000000
+      },
+      "technology_stack": [
+        "Multispectral imaging",
+        "Thermal sensors",
+        "AI pest detection models",
+        "3D canopy reconstruction"
+      ],
+      "primary_customers": [
+        "Government forest departments",
+        "Climate NGOs",
+        "Carbon credit companies"
+      ],
+      "risk_factors": [
+        "Dense canopy signal loss",
+        "Wildlife disturbance concerns",
+        "Funding dependency on policy"
+      ]
+    },
+
+    "telecommunications": {
+      "use_case": "Tower Inspection, Fiber Mapping & Disaster Damage Assessment",
+      "impact": "Rapid, safe, and automated infrastructure monitoring",
+      "roi_metrics": {
+        "inspection_speed_gain": "10x faster",
+        "fatal_risk_reduction": "95%",
+        "maintenance_cost_savings": "50%",
+        "downtime_reduction": "40%"
+      },
+      "market_projection": {
+        "global_2026_usd": 3100000000,
+        "global_2030_usd": 9500000000,
+        "india_growth_rate": "28% CAGR"
+      },
+      "technology_stack": [
+        "Computer vision defect detection",
+        "LiDAR structural scanning",
+        "5G signal mapping",
+        "Predictive maintenance AI"
+      ],
+      "monetization_models": [
+        "Inspection-as-a-Service",
+        "Annual enterprise SaaS",
+        "Per-tower analytics pricing"
+      ],
+      "risk_factors": [
+        "Enterprise sales cycle length",
+        "Data security compliance",
+        "Integration with legacy systems"
+      ]
+    },
+
+    "media_entertainment": {
+      "use_case": "Film Production, Sports Coverage & Drone Light Shows",
+      "impact": "High-quality aerial visuals at drastically reduced cost",
+      "roi_metrics": {
+        "filming_cost_reduction": "Up to 90%",
+        "setup_time_reduction": "70%",
+        "roi_break_even_period": "6-12 months"
+      },
+      "market_projection": {
+        "global_2026_usd": 6800000000,
+        "global_2030_usd": 12000000000
+      },
+      "entry_barriers": {
+        "initial_investment_inr": 1000000,
+        "skill_requirement": "High piloting & cinematography expertise",
+        "competition_level": "High"
+      },
+      "future_trends": [
+        "AI autonomous camera tracking",
+        "Volumetric drone filming",
+        "AR/VR live drone broadcasting"
+      ]
+    },
+
+    "agriculture_precision_farming": {
+      "use_case": "Crop Health Monitoring, Spraying & Yield Prediction",
+      "impact": "Data-driven farming with reduced chemical usage",
+      "roi_metrics": {
+        "pesticide_reduction": "30-50%",
+        "yield_improvement": "10-20%",
+        "labor_cost_savings": "40%"
+      },
+      "market_projection": {
+        "global_2026_usd": 8900000000,
+        "global_2030_usd": 22000000000,
+        "india_share_2030": "18% of APAC market"
+      },
+      "technology_stack": [
+        "NDVI imaging",
+        "AI crop disease classification",
+        "Autonomous spray control",
+        "IoT soil integration"
+      ],
+      "government_support_india": [
+        "Subsidy schemes for agri-drones",
+        "Startup grants",
+        "Farmer training programs"
+      ]
+    },
+
+    "global_market_outlook": {
+      "total_market_2026_usd": 53450000000,
+      "total_market_2030_usd": 129000000000,
+      "cagr_percent": 20.6,
+      "fastest_growing_region": "Asia-Pacific",
+      "largest_region_2035": "North America",
+      "key_growth_drivers": [
+        "AI autonomy",
+        "Battery improvements",
+        "Regulatory approvals for BVLOS",
+        "Enterprise automation demand"
+      ],
+      "major_challenges": [
+        "Airspace regulation",
+        "Privacy concerns",
+        "Cybersecurity risks",
+        "Weather limitations"
+      ]
+    }
+  }
+}

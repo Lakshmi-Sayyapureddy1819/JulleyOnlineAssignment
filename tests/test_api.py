@@ -35,7 +35,7 @@ def test_regulation_check():
     assert data["flight_status"] == "✅ Compliant"
     assert data["drone_category"] == "Micro"
 
-def test_chat_endpoint():
+def test_chat_rag_endpoint():
     """Test the RAG Chatbot (requires OpenAI API Key)."""
     response = client.post("/chat", json={"prompt": "What is a Nano drone?"})
     assert response.status_code == 200

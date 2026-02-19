@@ -19,4 +19,5 @@ class DroneOrchestrator:
         # 2. Defaullsexting retrieval logic from retriever.py
         return generate_drone_response(user_query)
 
-# Global instance for routes to use=
+# Global instance for routes to use
+drone_orchestrator = DroneOrchestrator()

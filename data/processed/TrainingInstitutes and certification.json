@@ -1,0 +1,974 @@
+{
+  "remote_pilot_training_organizations": [
+    {
+      "id": 1,
+      "name": "Aarav Unmanned Systems Private Limited",
+      "address": "Shri Jagadguru Chandrasekharanatha Swamiji Institute of Technology, P.B.No 20, BB Rd, Chikkaballapur, Karnataka - 562101"
+    },
+    {
+      "id": 2,
+      "name": "Academy of Carver Aviation Pvt. Ltd.",
+      "address": "Plot No P-50, MIDC Industrial Area, Near Baramati Airport Pune - 413133 Maharashtra"
+    },
+    {
+      "id": 3,
+      "name": "Accord Aviation Private Limited",
+      "address": "Survey No.314, Village Gorad, Kalmeshwar, Katol Road, Nagpur, Maharashtra-441501"
+    },
+    {
+      "id": 4,
+      "name": "Achariya Technologies Private Limited",
+      "address": "Khasra No 2506, 2507, 1135, Village-Kalwara, Tehsil Sanganer, Jaipur, Rajasthan-302037"
+    },
+    {
+      "id": 5,
+      "name": "ACHARYA N.G. RANGA AGRICULTURAL UNIVERSITY (ANGRAU)",
+      "address": "Amaravathi Road, Lam, Guntur - 522034 Andhra Pradesh, India"
+    },
+    {
+      "id": 6,
+      "name": "Adani Skill Development Centre",
+      "address": "ACC Cement, Near Vishwakarma Campus, Kymore, Katni, Madhya Pradesh-483880"
+    },
+    {
+      "id": 7,
+      "name": "Adani Skill Development Centre",
+      "address": "ACC Gagal Cement Work, Gagal, Barmana, Bilaspur, Himachal Pradesh-174 013"
+    },
+    {
+      "id": 8,
+      "name": "AdiSA Drona Private Limited",
+      "address": "A-3, Jgajjivan Heights, Vishalgadkar Compound Nagala Park, Kohlapur - 416 003 Maharashtra"
+    },
+    {
+      "id": 9,
+      "name": "Advect Skills Private Limited",
+      "address": "Bodhi Taru International School Ground, Plot No. 25,27, 28 Next to Kailsh Hospital, Knowledge Park-1 Phase-1 Greater Noida - 201308 UP"
+    },
+    {
+      "id": 10,
+      "name": "Aerdroids Technology Private Limited",
+      "address": "Sri Ramalinga Sowdambigai College of Science & Commerce Vadavall-Thondamuthur Rd, Onappalayam, Coimbatore Tamil Nadu-641 109"
+    },
+    {
+      "id": 11,
+      "name": "Aeroaeon Avionics Private Limited",
+      "address": "Chhattisgarh Swami Vivekananda Technical University, Bhilai CSVTU Campus, Newai Post, Durg District, Chhattisgarh - 491 107"
+    },
+    {
+      "id": 12,
+      "name": "Aerobot Research and Innovative Engineering Solutions LLP",
+      "address": "Survey No. 68/1A1, Badur Village, poonamallee Taluk, Tiruvallur District, Tamil Nadu"
+    },
+    {
+      "id": 13,
+      "name": "AeroDrone Robotics Private Limited",
+      "address": "Khewat No. 30, Khatauni No.35, Mustil No.06, Kila No. 23/1/2(3-15). Turkiawas, Rewari, Haryana-122 502"
+    },
+    {
+      "id": 14,
+      "name": "Aerophile Academy Private Limited",
+      "address": "Survey No. 43/2, & 43/3 Kallodu Village, Madhure Hobli, Doddaballpur, Bengalore, Karnataka-560089"
+    },
+    {
+      "id": 15,
+      "name": "AeroPioneer Institutes Private Limited",
+      "address": "Plot No 726, Khata No.266, Kanthapada, Puri Sadar, Delanga, Satyabadi, District-Puri, Odisha-752015"
+    },
+    {
+      "id": 16,
+      "name": "Aerotech Destination Private Limited",
+      "address": "VPO, Bhaproada, Near Mahadev Hotel, Jhajjar, Haryana-124501"
+    },
+    {
+      "id": 17,
+      "name": "Agmay Technologies Private Limited",
+      "address": "Sreenidhi Institute of Science Technology Yamannapet, Ghatkesar, Hyderabad, Telangana-501301"
+    },
+    {
+      "id": 18,
+      "name": "Agni Aero Sports Adventure Academy",
+      "address": "Hanger No. 2, Jakkur Aerodrome 12th km Bellary Road Bangalore - 560064 Karnataka, India"
+    },
+    {
+      "id": 19,
+      "name": "Airbus Group India Private Limited",
+      "address": "Alliance University, Chikkahagade Cross, Chandrapura - Anekal Main Road Anekal Bangalore - 562106"
+    },
+    {
+      "id": 20,
+      "name": "AITMC Venture Limited",
+      "address": "Khasra no. 55/23,24 Kullan Road, Bhuna, Fatehabad, Haryana-125111"
+    },
+    {
+      "id": 21,
+      "name": "AITMC Ventures Ltd",
+      "address": "Aakriti Ganga Educational Trust (AGET), Village Dulhera, Bahadurgarh- Jhajjar Road, Jhajjar, Haryana -124 507"
+    },
+    {
+      "id": 22,
+      "name": "AKGEC Skill Foundation",
+      "address": "Ajay Kumar Garg Engineering College Campus 27 Km Milestone, P.O. Adhyatmik Nagar, Ghaziabad, UP-201009"
+    },
+    {
+      "id": 23,
+      "name": "Akin Analytics Solution Private Limited",
+      "address": "Srinivasa Institute of Engineering and Technology, NH-216 Road, Cheyyeru(V), K. Ch.Pudi, Amalapuram, E.G.Dt, Andra Pradesh-533222"
+    },
+    {
+      "id": 24,
+      "name": "Aman Aviation and Aerospace solution Pvt. Ltd.",
+      "address": "86 Virwani Industrial Estate, Off Western Express Highway Goregaon East, Mumbai - 400063 Maharashtra"
+    },
+    {
+      "id": 25,
+      "name": "Ariista Academy LLP",
+      "address": "Survey No. 334/2A3 & 334/2A2, Tiruchengode Road, Ayyampalayam, Namakkal, Tamil Nadu-637003"
+    },
+    {
+      "id": 26,
+      "name": "Asian Skills and Training Pvt Ltd",
+      "address": "City Hawks Sports Complex,Opp.ST Thomas College, KP3,Greater Noida,Gautam Buddha Nagar,UttarPradesh-201308."
+    },
+    {
+      "id": 27,
+      "name": "Asia Soft Lab Private Limited",
+      "address": "ST Thomas College, Pillai Arunapuram, P. O. Palai, Kottayam, Kerla-686 574"
+    },
+    {
+      "id": 28,
+      "name": "Assam Electronics Development Corporation Limited",
+      "address": "AMTRON Office Industrial Estate Bamunimaidan Kamrup - 781021 Assam"
+    },
+    {
+      "id": 29,
+      "name": "Athiran Aerial Innovations Private Limited",
+      "address": "Survey No. 163/2A2, Rajakovil Village, Gudiyattam, Vellore, Tamil Nadu- 632602"
+    },
+    {
+      "id": 30,
+      "name": "Autonomous Unmanned Aerial Systems Private Limited",
+      "address": "Municipal Stadium Ground, Vidyanagar-Uliyathedka Road Vidyanagar, Kasrgod - 671123"
+    },
+    {
+      "id": 31,
+      "name": "AVI Drones Tech Solutions Private Limited",
+      "address": "Survey No 125/1, Koheda, Abdullapurmet Revenue Mandal, Rangareddy, Turkayamjal Municipality, Telangana-501511"
+    },
+    {
+      "id": 32,
+      "name": "Berry Avionics (India) Private Limited",
+      "address": "Gate No.499-501, Village Palia Pragnaa Mahona, Tehsil-Bakshi Ka Talab Lucknow, Uttar Pradesh-226 203"
+    },
+    {
+      "id": 33,
+      "name": "Better Fly Drone Academy Private Limited",
+      "address": "Sy No.80, Yenkapally Vill & G.P, Near Chilkoor Moinabad Mandal, R.R. District, Telangana-500075"
+    },
+    {
+      "id": 34,
+      "name": "CASR Anna University",
+      "address": "Centre for Aerospace Research MIT Campus, Anna University Chennai - 600044 Tamil Nadu"
+    },
+    {
+      "id": 35,
+      "name": "Center for Aerospace Research",
+      "address": "Aluru, Survey no 35/5, Alurupalya, Bangalore Rural district, Bangalore - 562162"
+    },
+    {
+      "id": 36,
+      "name": "Centre for Aerospace Research",
+      "address": "Rajadhani Institute of Engineering & Technology, Rajadhani Hills, Nedumparamdu PO, Nagaroor, Kerala-695102"
+    },
+    {
+      "id": 37,
+      "name": "Centre for Aerospace Research",
+      "address": "Kaushal Vikas Kendra, Directorate of Agriculture Engg Near Hans Travels, Musakhedi Ring Road, Indore, Madhya Pradesh-452001"
+    },
+    {
+      "id": 38,
+      "name": "Centurion School of Rural Enterprise Management Trust",
+      "address": "Survey No. 157-1 to 6, Tekkali Village, Nellimarla Mandal, Vizianagram District, Andra Pradesh-535 003"
+    },
+    {
+      "id": 39,
+      "name": "Centurion University of Technology and Management",
+      "address": "Village Alluri Nagar, R.Sitapur, Paralakhemundi Odisha - 761211"
+    },
+    {
+      "id": 40,
+      "name": "Cerebrospark Academy Private Limited",
+      "address": "MIT ADT sports ground, Rajbaugh, Loni Kalbhor, Pune 412201"
+    },
+    {
+      "id": 41,
+      "name": "Chhatrapati Shahu Maharaj Shilshan Sanstha",
+      "address": "Gut No. 150, Chitegaon Village, Tq- paithan, Distt: Chh. Sambhajinagar"
+    },
+    {
+      "id": 42,
+      "name": "Clearskies Learning & Research Pvt Ltd",
+      "address": "Clearskies Flying Training Area, Kuppahalli, Hobli, Nandi, Chikkaballapur Karnataka - 562103"
+    },
+    {
+      "id": 43,
+      "name": "CSC ACADEMY",
+      "address": "RPPIT, Village Bastara, Killa No 25, Murabba No 64, Kewat No 139 Tehsil Gharaunda, Karnal, Haryana - 132114"
+    },
+    {
+      "id": 44,
+      "name": "Defy Aerospace Private Limited",
+      "address": "VVMVP School Ground, Adjacent to Sri Sri Rural Development Programe skill centre (SSRDP) Near VVKI quarter, Udayapura, Kanakpura Road Bengaluru - 560082 Karnataka"
+    },
+    {
+      "id": 45,
+      "name": "Devbhoomi Aerotech Private Limited",
+      "address": "VPO Dangoh, Tehsil Ghanari, Una Himachal Pradesh-177204"
+    },
+    {
+      "id": 46,
+      "name": "DHAKSHA UNMANNED SYSTEMS PRIVATE LIMITED",
+      "address": "Survey No. 241 & 254, Aushapur Village, Ghatkesar, Medchal, Malkajgiri, Telangana- 501 301"
+    },
+    {
+      "id": 47,
+      "name": "Doctor Drones Industries Private Limited",
+      "address": "Survey No.92 Ramnagar, Village, Kalol Gandhinagar, Gujarat-382721"
+    },
+    {
+      "id": 48,
+      "name": "Dr Balsaheb Sawant Konkan Krishi Vidyapeeth",
+      "address": "Dapoli, Jalgaon, Ratnagiri, Mahrashtra-415712"
+    },
+    {
+      "id": 49,
+      "name": "DROGO DRONES PRIVATE LIMITED",
+      "address": "D. No 12/468/1, BYPASS ROAD, TADEPALLI VILLAGE, TADEPALLI MANDAL, Guntur, 522501, ANDHRA PRADESH, INDIA"
+    },
+    {
+      "id": 50,
+      "name": "Dronachariya Drone Academy LLP",
+      "address": "201, Ganeshpur Meharmati Sardhana Meerut - 250342 UP"
+    },
+    {
+      "id": 51,
+      "name": "Drone Academy Private Limited",
+      "address": "Holy Mary Institute of Technology & Science, Keesara-Bogaram, Ghatkesar Road, Kondapur, Telangana-501301"
+    },
+    {
+      "id": 52,
+      "name": "DRONE ACADEMY PVT LTD (INDIA DRONE ACADEMY)",
+      "address": "5A/6B, H. NO. 7-34/4-A, White Waters, Timberlake Colony, Shaikpet, Tolichowki Road, Hyderabad, Telangana - 500008"
+    },
+    {
+      "id": 53,
+      "name": "DroneAcharya Aerial Innovation Limited",
+      "address": "Indian Institute of Technology Ropar, Rupnagar, Punjab-140 001"
+    },
+    {
+      "id": 54,
+      "name": "DroneAcharya Aerial Innovation Limited",
+      "address": "Khasra No. 536 Begas-Shyopura Road, Begas, Kalawar, Jaipur-303 007"
+    },
+    {
+      "id": 55,
+      "name": "DroneAcharya Aerial Innovation Limited",
+      "address": "Karnataka Forest Academy, Gungaragatti, Post Mummigatti, Dharwad, Kranataka-580011"
+    },
+    {
+      "id": 56,
+      "name": "DroneAcharya Aerial Innovation Limited",
+      "address": "Khata No. 22A55106, Dostpur, Mangroli Khadar, Noida, Uttar Pradesh-201304"
+    },
+    {
+      "id": 57,
+      "name": "DroneAcharya Aerial Innovations Limited",
+      "address": "SF 105/1A, Kattampatti Annur Tatuk, Coimbatore - 641107"
+    },
+    {
+      "id": 58,
+      "name": "DroneAcharya Aerial Innovations Pvt. Ltd.",
+      "address": "Oriental Education Society ITI, Gaud Dara Teh: Haveli Pune - 412205 Maharashtra"
+    },
+    {
+      "id": 59,
+      "name": "Drone Acharya Udaan LLP",
+      "address": "Village Parsia, Village No. 31030803080, Tahsil Madihan, Mirzapur, Uttar Pradesh-231309"
+    },
+    {
+      "id": 60,
+      "name": "DRONE CORPORATION PRIVATE LIMITED",
+      "address": "Flat No.5,2nd Floor,Ramrajya Building No.1,Survey No.710+711+734/1& Plot no.452&452A,Road:Bhosala Military School,Samarth Nagar,Nashik,Shahar-422005."
+    },
+    {
+      "id": 61,
+      "name": "Drone Destination Limited",
+      "address": "IndianEye Security Private Limited, Village Belgundi Belgavi, Karnataka-591108"
+    },
+    {
+      "id": 62,
+      "name": "Drone Destination Limited",
+      "address": "IIT Patna, Bihta, Bihar-801106"
+    },
+    {
+      "id": 63,
+      "name": "Drone Destination Private Limited",
+      "address": "Moti Lal Nehru Farmers Training Institute, CORDET, IFFCO, Phulpur - 212404 UP"
+    },
+    {
+      "id": 64,
+      "name": "Drone Destination Pvt. Ltd.",
+      "address": "Chandigarh University Distt- Mohali - 140413 Punjab"
+    },
+    {
+      "id": 65,
+      "name": "Drone Destination Pvt. Ltd.",
+      "address": "Village : Bhora Kalan Teh: Pataudi Gurugram - 122413 Haryana"
+    },
+    {
+      "id": 66,
+      "name": "Drone Focus Path LLP",
+      "address": "Survey No.56, Thiruvaranga, Anugondanahaali Hobali Hosakote, Bangalore Rural District, Karnataka-560067"
+    },
+    {
+      "id": 67,
+      "name": "Drone Guru India Technologies Private Limited",
+      "address": "Shri Shyam Drone Training Arena, (Khasra No. 14) Near Bus Stand Akbarpur Sirohi, The- Nangal Chaudhary, Mahendergarh, Haryana-123 023"
+    },
+    {
+      "id": 68,
+      "name": "Drone Imaging & Information Services of Haryana Limited",
+      "address": "Community Centre, Ward No.- 4, Near Shiv Temple, Phoosgarh, Karnal, Haryana - 132001"
+    },
+    {
+      "id": 69,
+      "name": "DroneLab Technologies Private Limited",
+      "address": "Mansarovar Global University, Rani Avanti Bai Marg, Village-Hinotia Aalam, Ward no. 84, Kolar Road, Bhopal-462042"
+    },
+    {
+      "id": 70,
+      "name": "DRONELAB TECHNOLOGIES PRIVATE LIMITED",
+      "address": "Indus University, Rancharda, Via: Shilaj, Ahmedabad Gujarat – 382115"
+    },
+    {
+      "id": 71,
+      "name": "Dronelab Technologies Pvt Ltd",
+      "address": "Maruthi ITC Inkollu, Gollapalem Road, Inkollu, Bapatla District, AndhraPradesh - 523167"
+    },
+    {
+      "id": 72,
+      "name": "Drone Rangers India Private Limited",
+      "address": "Khasra No. 523/462, Village-Malwa Urf, Jaimohanpura, Shivdaspura, Chaksu, Jaipur, Rajasthan-303903"
+    },
+    {
+      "id": 73,
+      "name": "Drone Sphere Private Limited",
+      "address": "Khasra No.10, Rajadhirajpura urf Chimanpura, Patwar Halka Awania, Bagru, Sanganer, Jaipur, Rajasthan – 303 007"
+    },
+    {
+      "id": 74,
+      "name": "Dronetech Solutions Private Limited",
+      "address": "Village 246, Khewat No. 102/88, Khatuni Number 185, Mastic 15, Plot No 6,7,14 &15, Dadu Majra, Fatehgardh Sahib, Punjab-140 602"
+    },
+    {
+      "id": 75,
+      "name": "DRONETECH SOLUTIONS PRIVATE LIMITED",
+      "address": "Survey No 180, 184, 185, Nilemore, Nallasopara (West), Phalghar – 401203"
+    },
+    {
+      "id": 76,
+      "name": "Drone Van Private Limited",
+      "address": "Sauryautsav Ground, Gautam Buddha University, Greater Noida, Uttar Pradesh-201 306"
+    },
+    {
+      "id": 77,
+      "name": "Droneverse Aviation Private Limited",
+      "address": "Vikrant Institute of Technology and Management, Borikhedi, Harsola, Madhya Pradesh - 453441"
+    },
+    {
+      "id": 78,
+      "name": "Droneverse Aviation Private Limited",
+      "address": "Sardar Vallabhai Patel University of Agriculture and Technology Merrut, Uttarpradesh-250 110"
+    },
+    {
+      "id": 79,
+      "name": "Droneverse Aviation Private Limited",
+      "address": "The Jain International School, Village Fetri, Near Katol Road, Nagpur, Maharashtra-441502"
+    },
+    {
+      "id": 80,
+      "name": "Droneverse Aviation Private Limited",
+      "address": "Survey No 280,281 Village Belgundi Belgaum, Karnataka-591108"
+    },
+    {
+      "id": 81,
+      "name": "Droneverse Aviation Private Limited",
+      "address": "DPG Degree College, Sector 34, Gurugram, Haryana-122001."
+    },
+    {
+      "id": 82,
+      "name": "Dronier Avigation Private Limited",
+      "address": "ICAR, Indian Institute of Soil and Water Conservation Research Farm Selaqui, Dehradun, Uttarakhand-248011"
+    },
+    {
+      "id": 83,
+      "name": "Dronier Avigation Private Limited",
+      "address": "Gorakhnath University, Balapur Road, Sonabarsa, Gorakhpur, Uttar Pradesh-273007"
+    },
+    {
+      "id": 84,
+      "name": "Dronier Avigation Private Limited",
+      "address": "Dr. Rajendra Prasad Central Agriculture University, PUSA, Samastipur, Bihar-848125"
+    },
+    {
+      "id": 85,
+      "name": "Dronum India Aviations Private Limited",
+      "address": "6, Hariyana Ki Dhani, Khatwara, Mahapura, Jaipur, Rajasthan- 302026"
+    },
+    {
+      "id": 86,
+      "name": "Dr T M A Pai Foundation",
+      "address": "Survey No.255/2B, Manipal Skill Development Centre Dr T M A Pai Polytechnic Campus Manipal, Udipi, Karnataka-576 104"
+    },
+    {
+      "id": 87,
+      "name": "Evana Electricals Private Limited",
+      "address": "Mouz Majherhati, Block Bhangar II, PO Pithapukur, PS Kashipur, South 24 Paraganas, West Bengal-700135"
+    },
+    {
+      "id": 88,
+      "name": "Farata Technologies private Limited",
+      "address": "Khasra No. 05, Hadbast No. 317, Jamabandi year 2018-2019, village Bhoj Mataur, Tehsil Morni, Distt. Panchkula, Haryana"
+    },
+    {
+      "id": 89,
+      "name": "Flapone Aviation Private Limited",
+      "address": "Khasra No. 12/2, 20/2, 19/1, 59/9/2, 53/22, 57/2 (Shreejee Lawns) Sancholi Village, Sohna Palwal Road, Sohna, Gurugram, Haryana-125 103"
+    },
+    {
+      "id": 90,
+      "name": "Flapone Aviation Private Limited",
+      "address": "Village Akbarpur Barota, Sonipat, Haryana - 131103"
+    },
+    {
+      "id": 91,
+      "name": "Flytech Aviation Academy",
+      "address": "A1-Kauser, Plot No.295 Road No. 10, West Maredpally Secunderabad Telangana"
+    },
+    {
+      "id": 92,
+      "name": "Flytutor Technologies Private Limited",
+      "address": "Survey No 82 to 85,89,90 Manickampalayam, Tiruchengode, Namakkal Main Road, Namakkal, Tamil Nadu- 637 202"
+    },
+    {
+      "id": 93,
+      "name": "Flywings Drone Training Private Limited",
+      "address": "Khasra No.18, Killa No. 19 & 20, Babra Bakipur Farukh Nagar, Gurugram, Haryana-122503"
+    },
+    {
+      "id": 94,
+      "name": "FORE Institute of Drone Technology and Research",
+      "address": "Shri KhushalDas Univeristy, 7STG, Suratgarh Road, Hanumangarh, Rajasthan-335801"
+    },
+    {
+      "id": 95,
+      "name": "Fore Institute Of Drone Technology And Research (FIDTR)",
+      "address": "Sector 86, Manesar Gurugram Haryana"
+    },
+    {
+      "id": 96,
+      "name": "Ganpati Aviation Solution LLP",
+      "address": "Hawai Patti Shivpuri Madhya Pradesh-473551"
+    },
+    {
+      "id": 97,
+      "name": "Garuda Aerospace Private Limited",
+      "address": "24/46, KB Dasan Road Alwarpet Chennai"
+    },
+    {
+      "id": 98,
+      "name": "GDX Security Solution India Private Limited",
+      "address": "Khasra no. 248, Anandpur Road, Kot, Dadri, Gautham Buddha Nagar, Uttar Pradesh-201314"
+    },
+    {
+      "id": 99,
+      "name": "Government Aviation Training Institute (M/s Global Avianautics Ltd.)",
+      "address": "Village Kharkari, P.O: Baslambi Tehsil: Manesar Gurugram - 122414 Haryana"
+    },
+    {
+      "id": 100,
+      "name": "Gujarat Police Drone Training Institute",
+      "address": "Gujarat Police Academy Campus, Karai, Gandhinagar, Gujarat -382355"
+    },
+    {
+      "id": 101,
+      "name": "Gundavaram Vanaja Bhaskar Rao Vidyapeet",
+      "address": "Gowraram Village, Wargal Mandal, Siddipet, Telangana-502278"
+    },
+    {
+      "id": 102,
+      "name": "Hogwarts School of Drones Private Limited",
+      "address": "Khasra No. 330,332 Village-Sirani Ganpatpura, Kalwara Tehsil-Sanganer Jaipur, Rajasthan-302029"
+    },
+    {
+      "id": 103,
+      "name": "Ideaforge Technology Limited",
+      "address": "Survey No-34/1 and 2, Goregaon, Neral Badlapur-Road, Ambernath Thane, Maharashtra-421503"
+    },
+    {
+      "id": 104,
+      "name": "Indian Institute of Technology",
+      "address": "Flight Lab, Department of Aerospace Engineering IIT, Kanpur, Uttar Pradesh-208016"
+    },
+    {
+      "id": 105,
+      "name": "Indian Institute of Technology, Guwahati",
+      "address": "Guwahati, Assam-781 039"
+    },
+    {
+      "id": 106,
+      "name": "Indira Gandhi Rashriya Uran Akademi (IGRUA)",
+      "address": "Hindusthan College of Engineering & Technology Coimbatore - 641032 Tamil Nadu"
+    },
+    {
+      "id": 107,
+      "name": "Indira Gandhi Rashriya Uran Akademi (IGRUA)",
+      "address": "Vaigai College of Engineering Melur Taluk, Madurai - 625122 TamilNadu"
+    },
+    {
+      "id": 108,
+      "name": "Indira Gandhi Rashtriya Uran Akademi",
+      "address": "Bhora Kalan Gurugram - 122413 Haryana"
+    },
+    {
+      "id": 109,
+      "name": "Indira Gandhi Rashtriya Uran Akademi",
+      "address": "Madhav Institute of Technology and Science Gwalior - 474005 M.P."
+    },
+    {
+      "id": 110,
+      "name": "Indira Gandhi Rashtriya Uran Akademi",
+      "address": "Skill Devlopment Centre, Agricultural Engg. Badwai, Bhopal, Madhya Pradesh, 462038"
+    },
+    {
+      "id": 111,
+      "name": "Indira Gandhi Rashtriya Uran Akademy (IGRUA)",
+      "address": "214/1, Thirumagondanahalli Doddaballapur Bengaluru - 561205 Karnataka"
+    },
+    {
+      "id": 112,
+      "name": "Indira Gandhi Rashtriya Uran Akademy(IGRUA)",
+      "address": "Industrial Training Institute Shahpur - 176206 Himachal Pradesh"
+    },
+    {
+      "id": 113,
+      "name": "Indo Swiss Centre of Excellence",
+      "address": "Gat No.13, Village-Koregoan Bhima Taluka-Shirur, Pune, Maharashtra-412216"
+    },
+    {
+      "id": 114,
+      "name": "Institute For Technology And Management-ITM University",
+      "address": "Khasra No 537, Village Ulba, PHN-0024, Abhanpur Raipur, Chhattisgarh-493661"
+    },
+    {
+      "id": 115,
+      "name": "Institute of Co-operative and Corporate Management Research & Training",
+      "address": "Ram Saran Verma farms, Bablu Singh Barauli, Daulatpur, Barabanki, Uttar Pradesh-225414"
+    },
+    {
+      "id": 116,
+      "name": "IOTECHWORLD AVIGATION Private Limited",
+      "address": "Killa no. 11/2, 11/1/2, 20, Vill-Fazilpur, Jharsa, Sector 71, Gurugram"
+    },
+    {
+      "id": 117,
+      "name": "IQBRI Verticals Private Limited",
+      "address": "Krishi Vigyan Kendra,Vill-Handiaya, Barnala, Punjab-148101"
+    },
+    {
+      "id": 118,
+      "name": "JBB Drone Training Academy",
+      "address": "Scope Global University Campus NH 12, Hosangabad Road, Bhopal, Madhya Pradesh-462047"
+    },
+    {
+      "id": 119,
+      "name": "J VE KONNECT PRIVATE LIMITED (OPC)",
+      "address": "608, Ellora Fiesta, Sanpada, Navi Mumbai - 400706"
+    },
+    {
+      "id": 120,
+      "name": "Karnataka State Police Remote Pilot Training Institute",
+      "address": "Office of The Superintendent of Police, Centre for Counter Terrorism Training Centre, Agara, Bengaluru Karnataka-560 082"
+    },
+    {
+      "id": 121,
+      "name": "Kasegaon Education Societys Rajarambapu Institute of Technology",
+      "address": "Rajaram Nagar, Sakhrale, Islampur, Taluka – Walwa, Dist – Sangli, State – Maharashtra, Pin Code - 415414"
+    },
+    {
+      "id": 122,
+      "name": "Kaushalya The Skill University",
+      "address": "ITI Mandvi, Behind Govt Boys Hostel, New ITI Mandvi ,At & Po-Mandvi, Surat, Gujrat-394160"
+    },
+    {
+      "id": 123,
+      "name": "Kaushalya The Skill University",
+      "address": "Industrial Training Institute(ITI) ,Bilimora,Opp.Sakti Nagar,Chikhli Road,Antalia,Gujrat-396321."
+    },
+    {
+      "id": 124,
+      "name": "Kaushalya The Skill University",
+      "address": "Drive In Road Memnagar, Opp. Manav Mandir Ahmedabad - 380054 Gujarat"
+    },
+    {
+      "id": 125,
+      "name": "Kaushalya The Skill University",
+      "address": "ITI Amreli, Near Railway Station, Lathi Road, Amreli, Gujarat-365601"
+    },
+    {
+      "id": 126,
+      "name": "Kaushalya The Skill University",
+      "address": "ITI Kalavad Jamnagar Rd, Near Bapa Sitaram Gaushala, Jamnagar, Gujarat- 361160"
+    },
+    {
+      "id": 127,
+      "name": "Kaushalya The Skill University",
+      "address": "KSU Campus, Shilaj Rancharda Road, Shilaj, Ahmendabad - 380059"
+    },
+    {
+      "id": 128,
+      "name": "KITE AERO PRIVATE LIMITED",
+      "address": "Survey No-517, Opp. Emu Farm, Near Vav Vasahat, Waghodia- Rustampura Road, Saidal Village, Vadodara-391761"
+    },
+    {
+      "id": 129,
+      "name": "Kothari Industrial Corporation Limited",
+      "address": "Survey No- 171, NH 44, Sivarakkottai (Po), Kallikudi Tk, Madurai, Tamil Nadu - 625 706"
+    },
+    {
+      "id": 130,
+      "name": "Krushaka Unmanned and Airborne Solution Private Limited",
+      "address": "Survey No.81, Village-Aralasandra, Hobli Nelamangala, Karnataka-562123"
+    },
+    {
+      "id": 131,
+      "name": "Mahatma Phule Krishi Vidyapeeth",
+      "address": "Rahuri Ahmednagar - 413722 Maharashtra"
+    },
+    {
+      "id": 132,
+      "name": "Marut Dronetech Private Limited",
+      "address": "Ookal Haveli Village, Geesugonda Mandal, Warangal, Telangana- 506 330"
+    },
+    {
+      "id": 133,
+      "name": "Marut Dronetech Private Limited",
+      "address": "National Institute of Plant Health Management (NIPHM), Rajendra Nagar, Hyderabad - 500030"
+    },
+    {
+      "id": 134,
+      "name": "Matrix Geo Solutions Private Limited",
+      "address": "Khewat No. 323 and Killa No. 10,11. Village Luksar, Teshil Badli, Jhajjar, Haryana-124 507"
+    },
+    {
+      "id": 135,
+      "name": "MULTIPLEX DRONE PRIVATE LIMITED",
+      "address": "Survey No. 26/1, 26/2, 27/2, Mallarabanavadi Village, Bangalore - 562123"
+    },
+    {
+      "id": 136,
+      "name": "Naini Aerospace Limited",
+      "address": "UPSIDC Industrial Area, P.O : TSL, Naini, Prayagraj - 211 010"
+    },
+    {
+      "id": 137,
+      "name": "NEOSKY INDIA LIMITED",
+      "address": "Survey No. 40/1, Kuthandahalli Village, Vokkaleri Hobali, Kolar Thaluk & District, Karnataka-563133"
+    },
+    {
+      "id": 138,
+      "name": "Nitiraj Engineers Limited",
+      "address": "J25-26, Awdhan MIDC, Dhule Maharashtra-424 006"
+    },
+    {
+      "id": 139,
+      "name": "North East Centre For Technology Application and Reach",
+      "address": "Jawaharlal Nehru College. P.O. Boko District Kamrup, Assam-781123"
+    },
+    {
+      "id": 140,
+      "name": "NOVA AEROSPACE PRIVATE LIMITED",
+      "address": "St. Joseph Polytechnic College Campus No. 1, Karaikudi Road, Opposite to BHEL, Thirumayam, Pudukkottai, Tamil Nadu- 622507."
+    },
+    {
+      "id": 141,
+      "name": "OnTheFly Private Limited",
+      "address": "77/14, Nehru Nagar(East), Bhilai, Durg, Chattisgarh-490020"
+    },
+    {
+      "id": 142,
+      "name": "OVCT Venture Pvt Ltd",
+      "address": "Khasra No.15,16,17,25,12 K.M Stone, N.H-52 Hisar- Rajgarh Road, VPO Bherian, Hisar, Haryana -125001"
+    },
+    {
+      "id": 143,
+      "name": "Panchvktra Foundation",
+      "address": "Survey no.919,Bramhanagari, Wai MIDC Area, Wai, 412803. Maharashtra"
+    },
+    {
+      "id": 144,
+      "name": "PAVAMAN AVIATION PRIVATE LIMITED",
+      "address": "15th Floor, Kapil Towers, Nanakramguda, Hyderabad, Rangareddy, Telangana - 500032"
+    },
+    {
+      "id": 145,
+      "name": "PBC’s AERO HUB",
+      "address": "36/278, Laxmi Nagar Near Ambedkar School Pune - 411009 Maharashtra"
+    },
+    {
+      "id": 146,
+      "name": "Phoenix Drone Flying LLP",
+      "address": "KR Mangalam University, Sohna Road, Gurugram, Haryana 122103"
+    },
+    {
+      "id": 147,
+      "name": "Piefly Aviation Private Limited",
+      "address": "IC-11, Guest House Block-G, SJCE-STEP, JSS TI Campus Manasagangothri, Mysore Karnataka-57006"
+    },
+    {
+      "id": 148,
+      "name": "Pioneer Flying Academy Pvt. Ltd",
+      "address": "MS-10, NH-91 Dhanipur Airport, Post Panethi Aligarh - 202001 Uttar Pradesh"
+    },
+    {
+      "id": 149,
+      "name": "PJTSAU Drone Academy",
+      "address": "Survey No. 465, 467, 468, & 469 Airfield 1 & 2 (University Sports Complex), Professor Jayashankar Telangana State Agricultural University Rajendra Nagar, Hyderabad-500030"
+    },
+    {
+      "id": 150,
+      "name": "Precision Airborne Systems Pvt Ltd",
+      "address": "Near CRIF Building, IIT Bhubaneswar Main Campus, Argul, Jatani, Odisha – 752050"
+    },
+    {
+      "id": 151,
+      "name": "PRYM SOLUTIONS PRIVATE LIMITED",
+      "address": "Gat No. 69, Village: Gundewadi. Taluka and Distt. Jalna, Maharashtra, 431203"
+    },
+    {
+      "id": 152,
+      "name": "Punjab Agricultural University",
+      "address": "Mela Ground, Punjab Agricultural University, Ludhiana, Punjab-141004"
+    },
+    {
+      "id": 153,
+      "name": "RAO INDUSTRIES",
+      "address": "GAT 181, RAO HOUSE, 3HP WAFGAON, Rajgurunagar Khed, Pune, Maharashtra, 410505"
+    },
+    {
+      "id": 154,
+      "name": "Raxa Security Services Ltd",
+      "address": "Raxa Academy, Near Kodikonda Checkpost, Moramapalli Post, Chilamathur, Hindupur Taluk, Andhra Pradesh - 515601"
+    },
+    {
+      "id": 155,
+      "name": "Redbird Flight Training Academy Private Limited",
+      "address": "Krishi Vishwavidhyalay Jodhpur Beej Utpaadan Farm, Near FCI Godown, Bilara, Jodhpur, Rajasthan-342602"
+    },
+    {
+      "id": 156,
+      "name": "REDBIRD FLIGHT TRAINING ACADEMY PRIVATE LIMITED",
+      "address": "E-520A, First Floor, near Ramphal Chowk, Palam Extension, Sector-7, Dwarka, New Delhi -110077"
+    },
+    {
+      "id": 157,
+      "name": "Reelon Air Private Limited",
+      "address": "Ghughwa Village, Amleshwar, Tehsil-Patan, District-Durg, Chattisgarh-491111"
+    },
+    {
+      "id": 158,
+      "name": "Rotorize Aviation Private Limited",
+      "address": "Dalkhan, Near Kharadi Railway Station(East) Taluka - Shahupur, District Thane - 421601"
+    },
+    {
+      "id": 159,
+      "name": "RRU - DroneAcharya",
+      "address": "Lavad, Dahegam, Gandhinagar, Gujarat 382305"
+    },
+    {
+      "id": 160,
+      "name": "Samvardhane Technologies Private Limited",
+      "address": "RS No.88/3, Kalakuppi Circle, Nesaragi, Bailhongal Taluk, Belagavi, Karnataka- 591102"
+    },
+    {
+      "id": 161,
+      "name": "Sanskar Dham Campus",
+      "address": "Bopal Ghuma Sanand Road Near Manipur village Ahemdabad - 382115 Gujarat"
+    },
+    {
+      "id": 162,
+      "name": "Shaurya Drone Pvt Ltd",
+      "address": "Gata No 211/1, Lagaratha, Kanpur District, Uttar Pradesh - 209302"
+    },
+    {
+      "id": 163,
+      "name": "SIPNA Shikshan Prasarak Mandal - Amravati",
+      "address": "SIPNA college of Engineering and technology, Infront of Nemani Godown, Badnera Road, Amravati, Maharashtra - 444701"
+    },
+    {
+      "id": 164,
+      "name": "Skyvan Aviation (OPC) Private Limited",
+      "address": "Narangarh Girls High School Village, Post Office- Narangarh, Police Station- Jankia, Khorda, Orissa- 752 018"
+    },
+    {
+      "id": 165,
+      "name": "Skyview UAV LLP",
+      "address": "Tapti Valley International Schook, Block No 456-457, Rander-Dandi Road, Village Narthan, Taluka, Olpad, Gujarat - 395005"
+    },
+    {
+      "id": 166,
+      "name": "Soaring Aerotech Private Limited",
+      "address": "Survey No. 322/3, Village- Lasudia Mori Tehsil- Juni Indore, District- Indore, Madhya Pradesh-453771"
+    },
+    {
+      "id": 167,
+      "name": "SPH Aviation Private Limited",
+      "address": "Kila No.31/18, Ward No. 5, Handi Khera Sirsa Haryana-125 055"
+    },
+    {
+      "id": 168,
+      "name": "SPH Aviation Private Limited",
+      "address": "Puran Murti Educational Society Campus, Kami Road, Sonipat Haryana - 131001"
+    },
+    {
+      "id": 169,
+      "name": "SPH Aviation Private Limited",
+      "address": "Block No.177/Paiki 2 Village Jalat, Dahod, Gujarat-389154"
+    },
+    {
+      "id": 170,
+      "name": "SPH AVIATION PRIVATE LIMITED",
+      "address": "Kasra Number-1535 Village and Post Shikhopur, Gurgaon, Haryana-122004"
+    },
+    {
+      "id": 171,
+      "name": "Sri Eshwar Drone tech Pvt Ltd",
+      "address": "SF No 76, Sri Eshwar College of Engg, Kondampatti, Pollachi, Coimbatore - 641202"
+    },
+    {
+      "id": 172,
+      "name": "SRI VENKATESWARA UNIVERSITY",
+      "address": "SV University, Prakasam Rd, Andhra Pradesh, India, 517502"
+    },
+    {
+      "id": 173,
+      "name": "Tamil Nadu Agriculture University",
+      "address": "Department of Rice, Center for Water and Geospatial Studies, Tamil Nadu Agriculture University, Coimbatore, Tamil Nadu-641003."
+    },
+    {
+      "id": 174,
+      "name": "TaraMitra Drone Academy Private Limited",
+      "address": "Gat.No.217/1/2, Wathar Nimbalkar, Tal: Phaltan, Distt: Satara, Maharashtra 415523"
+    },
+    {
+      "id": 175,
+      "name": "TARA UAV Private Limited",
+      "address": "Survey No. 59 & 60, Madaram Village, Under Grampanchayat Ankushapur Village, Ghatkesar Mandal, Distt. Rangareddy, Hyderabad-501301"
+    },
+    {
+      "id": 176,
+      "name": "Tecknoground Private Limited",
+      "address": "Bihar Agricultural University,Sabour,Bhagalpur,Bihar,Pin-813210"
+    },
+    {
+      "id": 177,
+      "name": "Telangana State Aviation Academy",
+      "address": "Old Airport Road Near New Bowenpally Hyderabad - 500011 Telangana"
+    },
+    {
+      "id": 178,
+      "name": "Terna Public Charitable Trust",
+      "address": "Solapur Road Osmanabad - 413501 Maharashtra"
+    },
+    {
+      "id": 179,
+      "name": "The Bombay Flying Club",
+      "address": "Juhu Airport, Santacruz (W) Mumbai Maharashtra"
+    },
+    {
+      "id": 180,
+      "name": "THE BOMBAY FLYING CLUB",
+      "address": "Jayshin Lake Vaitarna Resort, Vaitarna, Igatpuri, Zarwad Bk, Maharashtra - 422212"
+    },
+    {
+      "id": 181,
+      "name": "The Madhya Prasdesh Flying Club Limited",
+      "address": "Kasturbagram Rural Institute Khandwa Rd, Tejaji Nagar Kasturbagram, Indore, Madhya Pradesh - 452 020"
+    },
+    {
+      "id": 182,
+      "name": "The Unati Agri Allied and Marketing Multi State Cooperative Society Limited",
+      "address": "The Unati Cooperative Marketing cum Processing Society Ltd, Sector-4, 5km Talwara milestone, Distt. Hoshiarpur, Punjab- 144216"
+    },
+    {
+      "id": 183,
+      "name": "Tras Aviaiton Private Limited",
+      "address": "Khasra no 67 & 36, Royal Institute of Science and Managment Wazirpur, Harsaru, Gurugram, Haryana-122 505"
+    },
+    {
+      "id": 184,
+      "name": "ULTIMATE ENERGY RESOURCE PRIVATE LIMITED",
+      "address": "Salaiya Road, Misrod, Bhopal (Madhya Pradesh) Pin Code - 462047"
+    },
+    {
+      "id": 185,
+      "name": "Vama Skylight LLP",
+      "address": "Plot Survey 766/1, 766/2A, 766/2B, 766/2C, Dahbel, Daman, UT of Daman & Diu - 396210"
+    },
+    {
+      "id": 186,
+      "name": "Vayuratha Private Limited",
+      "address": "KCG College, KCG Nagar, Rajiv Gandhi Salai, Karapakkam, Chennai, Tamil Nadu-600097"
+    },
+    {
+      "id": 187,
+      "name": "Virginia Tech India Research And Education Forum",
+      "address": "Patta no:747, Mayyur Flying Field, Meyyur, Chengalpattu, Chennai-603 111"
+    },
+    {
+      "id": 188,
+      "name": "VSP Flight Training Academy Private Limited",
+      "address": "VSP flight training academy, Infront of Hotal A Star, Main Jhjjar-Rewari Road, Gijarod, Jhajjar, Haryana-124103"
+    },
+    {
+      "id": 189,
+      "name": "Vymanika Aerospace Technologies and Engineering Pvt Ltd",
+      "address": "College of Engineering and Technology, KVK, Parsi Tekra,Dedipada, Di Narmada,Gujarat-393040."
+    },
+    {
+      "id": 190,
+      "name": "Wissmo Agventure Private Limited",
+      "address": "SKN University, Deptt of Agriculture Engg., Jobner, Jaipur, Rajasthan-303328"
+    },
+    {
+      "id": 191,
+      "name": "Woahage Aviation Private Limited",
+      "address": "Sy. No. 622/4, Pallepahad Village, M. Thurkapally Mandal, Yadadri Bhuvanagiri District, Telangana, India Pincode : 508116"
+    },
+    {
+      "id": 192,
+      "name": "WOW GO GREEN LLP",
+      "address": "NRFMT&TI - WOW Go Green, Khasra No. 136/10/1 MIN 8, 9, 7/2 MIN, Village Landhari, Hisar, Haryana-125047"
+    },
+    {
+      "id": 193,
+      "name": "WOW GO GREEN LLP",
+      "address": "Shri Madhav Jan Sewa Nayas 69th KM Stone, Vill. Patti Kalyan, G.T. Road, Samalkha, Panipat."
+    },
+    {
+      "id": 194,
+      "name": "Yali Air Rescue Private Limited",
+      "address": "Survey no.50/1A and 50/1B, Patta No. 2505 Thennamanadu North, Orthanadu TK, Tanjavur, Tamil Nadu-614625"
+    }
+  ]
+}

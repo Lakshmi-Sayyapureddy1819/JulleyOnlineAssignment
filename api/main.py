@@ -12,7 +12,7 @@ from starlette.background import BackgroundTask
 from pydantic import BaseModel
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos
-from rag.retriever import query_drone_knowledge, ingest_text
+from rag.retriever import query_drone_knowledge, ingest_multimodal_data
 from mcp_server.tools.flight_calc import get_flight_estimates
 from mcp_server.tools.roi_calc import get_roi_analysis
 from mcp_server.tools.compliance import check_regulation_compliance
@@ -154,9 +154,17 @@ async def find_drones(category: str = None, budget: float = None, endurance: int
 
 @app.post("/upload")
 async def upload_document(file: UploadFile = File(...)):
-    content = await file.read()
-    text = content.decode("utf-8")
-    chunks = ingest_text(text, file.filename)
+    # Save file temporarily to handle it as a path for multi-modal ingestion
+    temp_filename = f"temp_{file.filename}"
+    with open(temp_filename, "wb") as buffer:
+        content = await file.read()
+        buffer.write(content)
+    
+    chunks = ingest_multimodal_data(temp_filename, file.content_type)
+    
+    if os.path.exists(temp_filename):
+        os.remove(temp_filename)
+        
     return {"message": "Document processed successfully", "chunks_added": chunks}
 
 @app.get("/analytics")
